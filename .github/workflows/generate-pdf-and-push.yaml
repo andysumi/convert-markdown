@@ -1,0 +1,29 @@
+name: Generate pdf and push
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  nodejob:
+    runs-on: ubuntu-latest
+    env:
+      REPO: https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.16.0"
+      - name: npm install
+        run: npm install
+      - name: Generate PDF
+        run: npm run md-to-pdf
+      - name: Git commit and push
+        run: |
+          git config --global user.email "andysumi@ruby.net.tokai-u.jp"
+          git config --global user.name "andysumi"
+          git add .
+          git status
+          git commit -m 'generate PDF' && git push ${REPO} ${{github.event.pull_request.head.ref}}
