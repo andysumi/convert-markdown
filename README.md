@@ -1,6 +1,33 @@
+---
+stylesheet: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css
+body_class: markdown-body
+pdf_options:
+  format: A4
+  margin: 25mm 20mm
+---
+
 # README
 
 # 見出しh1
+
+## TOC
+
+- [README](#readme)
+- [見出しh1](#見出しh1)
+  - [TOC](#toc)
+  - [見出しh2](#見出しh2)
+    - [リスト](#リスト)
+    - [番号付きリスト](#番号付きリスト)
+    - [チェックボックス](#チェックボックス)
+    - [インライン表示](#インライン表示)
+    - [コードブロック](#コードブロック)
+    - [リンク](#リンク)
+    - [引用](#引用)
+    - [画像](#画像)
+    - [テーブル](#テーブル)
+    - [文字装飾](#文字装飾)
+    - [水平線](#水平線)
+    - [注釈](#注釈)
 
 ## 見出しh2
 
