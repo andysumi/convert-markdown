@@ -17,9 +17,8 @@ jobs:
         run: npm install
       - name: Generate PDF
         run: npm run md-to-pdf
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v2
         with:
-          name: create-pdf
           path: |
-              ./README.pdf
-              ./READYOU.pdf
+            ./README.pdf
+            ./READYOU.pdf
