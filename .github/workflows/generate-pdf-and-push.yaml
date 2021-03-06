@@ -1,8 +1,5 @@
 name: Generate pdf and push
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
   nodejob:
