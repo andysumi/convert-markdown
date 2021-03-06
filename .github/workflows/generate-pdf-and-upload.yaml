@@ -1,4 +1,4 @@
-name: Generate pdf and push
+name: Generate pdf and upload
 on: push
 
 jobs:
@@ -20,4 +20,4 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: create-pdf
-          path: ./README.pdf
+          path: ./*.pdf
