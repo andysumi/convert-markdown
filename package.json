@@ -1,0 +1,23 @@
+{
+  "name": "convert-markdown",
+  "version": "1.0.0",
+  "description": "## 見出しh2",
+  "main": "index.js",
+  "scripts": {
+    "markdown-pdf": "markdown-pdf README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andysumi/convert-markdown.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andysumi/convert-markdown/issues"
+  },
+  "homepage": "https://github.com/andysumi/convert-markdown#readme",
+  "dependencies": {
+    "markdown-pdf": "^10.0.0"
+  }
+}
