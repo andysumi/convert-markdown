@@ -19,5 +19,6 @@ jobs:
         run: npm run md-to-pdf
       - uses: actions/upload-artifact@v1
         with:
-          name: create-pdf
-          path: ./**/*.pdf
+          path: |
+              ./README.pdf
+              ./READYOU.pdf
