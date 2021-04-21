@@ -1,4 +1,4 @@
-name: Generate pdf and upload
+name: test
 on: push
 
 jobs:
@@ -7,5 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - run |
+      - name: run command
+      - run:
         echo ${{github.ref}}
+        echo ${{GITHUB_REF}}
