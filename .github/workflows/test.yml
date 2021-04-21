@@ -9,5 +9,5 @@ jobs:
         uses: actions/checkout@v2
       - name: run command
         run: |
-          echo ${{github.ref}}
-          echo ${{GITHUB_REF}}
+          echo $github.ref
+          echo $GITHUB_REF
