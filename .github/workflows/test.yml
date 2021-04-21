@@ -8,6 +8,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: run command
-      - run:
-        echo ${{github.ref}}
-        echo ${{GITHUB_REF}}
+        run: |
+          echo ${{github.ref}}
+          echo ${{GITHUB_REF}}
