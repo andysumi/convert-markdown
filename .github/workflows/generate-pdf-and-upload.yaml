@@ -15,6 +15,10 @@ jobs:
           node-version: "14.16.0"
       - name: npm install
         run: npm install
+      - name: install japanese font
+        run: |
+          sudo apt-get update
+          sudo apt-get install fonts-takao-mincho fonts-takao
       - name: Generate PDF
         run: npm run md-to-pdf
       - uses: actions/upload-artifact@v2
