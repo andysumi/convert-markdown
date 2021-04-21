@@ -18,7 +18,7 @@ jobs:
       - name: install japanese font
         run: |
           sudo apt-get update
-          sudo apt-get install fonts-takao-mincho fonts-takao
+          sudo apt-get install fonts-noto
       - name: Generate PDF
         run: npm run md-to-pdf
       - uses: actions/upload-artifact@v2
