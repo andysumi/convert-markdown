@@ -10,6 +10,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.16.0"
+      - name: npm install
+        run: npm install
+      - name: install japanese font
+        run: |
+          sudo apt-get update
+          sudo apt-get install fonts-noto
       - name: Generate PDF
         run: npm run md-to-pdf
       - name: Release
