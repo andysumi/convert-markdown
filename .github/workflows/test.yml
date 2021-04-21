@@ -1,7 +1,6 @@
 name: test
 on:
-  push:
-    tags
+  push: tags
 
 jobs:
   nodejob:
